@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Character Counter</h1><br>
+            <textarea id="inputtext" placeholder="Enter Text Here..."></textarea>
+            <p>Character Count : <span id="count">0</span></p>
+        </div>
+    </div>
+    <script>
+        let inputtext=document.getElementById('inputtext');
+        let count=document.getElementById('count');
+
+        inputtext.addEventListener( 'input' , () => {
+        count.textContent=inputtext.value.length;
+        })
+    </script>
+</body>
+</html>
